@@ -49,13 +49,19 @@ const nuovaStudentessa = {
 
 studenti.push(nuovaStudentessa);
 
+studenti.push({
+   nome: 'Mimmuzza',
+   cognome: 'Ninnetta',
+   'anno-di-nascita':  1976,
+   corso: 'Architettura'
+});
+
 for (let index = 0; index < studenti.length; index++) {
    const studente = studenti[index];
 
-   for (chiave in studente) {
+   for (const chiave in studente) {
       console.log(chiave, ':', studente[chiave]);
    }
 
-   console.log('----')
-
+   console.log('----');
 }
